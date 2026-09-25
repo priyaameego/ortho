@@ -123,7 +123,7 @@ export default function VisionMission() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-center mb-20 tracking-tight"
+            className="text-4xl md:text-5xl font-bold text-center mb-16 tracking-tight text-white"
           >
             Our Values
           </motion.h2>
@@ -136,19 +136,19 @@ export default function VisionMission() {
               hidden: { opacity: 0 },
               show: { opacity: 1, transition: { staggerChildren: 0.1 } }
             }}
-            className="flex flex-wrap justify-center gap-6 lg:gap-8 max-w-6xl mx-auto"
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 lg:gap-8 max-w-6xl mx-auto"
           >
             {values.map((val, idx) => (
               <motion.div
                 key={idx}
                 variants={{ hidden: { opacity: 0, scale: 0.9 }, show: { opacity: 1, scale: 1 } }}
                 whileHover={{ y: -10, scale: 1.05 }}
-                className="bg-white/10 backdrop-blur-md border border-white/10 p-8 rounded-[2rem] flex flex-col items-center gap-6 hover:bg-primary transition-all duration-300 cursor-default min-w-[220px] shadow-xl hover:shadow-primary/30"
+                className="bg-white/10 backdrop-blur-md border border-white/10 p-6 md:p-8 rounded-2xl md:rounded-[2rem] flex flex-col items-center justify-center gap-4 md:gap-6 hover:bg-primary transition-all duration-300 cursor-default shadow-xl hover:shadow-primary/30 h-full w-full text-center"
               >
-                <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center">
-                  <val.icon size={32} className="text-white" />
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-white/10 rounded-2xl flex items-center justify-center shrink-0">
+                  <val.icon size={28} className="text-white md:w-[32px] md:h-[32px]" />
                 </div>
-                <span className="font-bold tracking-widest uppercase">{val.name}</span>
+                <span className="font-bold text-sm md:text-base tracking-widest uppercase text-white break-words w-full">{val.name}</span>
               </motion.div>
             ))}
           </motion.div>
