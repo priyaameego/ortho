@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00529b; /* Professional blue */
+  --color-primary-dark: #003d7a;
+  --color-primary-light: #e6f0fa;
+  --color-secondary: #333333; /* Dark grey */
+  --color-secondary-light: #f5f5f5; /* Light grey backgrounds */
+  
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+  --font-heading: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-secondary bg-white antialiased;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-secondary font-semibold tracking-tight;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary-dark;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    @apply py-16 md:py-24;
+  }
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+/* Subtle animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+}
