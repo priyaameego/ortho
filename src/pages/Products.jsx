@@ -6,42 +6,42 @@ const categories = [
   {
     name: 'Orthopaedic Supports & Appliances',
     desc: 'Functional supports designed for structural stability and recovery.',
-    img: 'https://images.unsplash.com/photo-1583324113626-70df0f4deaab?auto=format&fit=crop&q=80&w=800'
+    img: '/products/ortho_supports.jpg'
   },
   {
     name: 'Rehabilitation Aids',
     desc: 'Aids designed to support mobility and independent movement.',
-    img: 'https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=800'
+    img: '/products/rehab_aids.jpg'
   },
   {
     name: 'Prosthetic & Orthotic Products',
     desc: 'Specialized products crafted with engineering precision.',
-    img: 'https://images.unsplash.com/photo-1616012480717-fd9867059ca0?auto=format&fit=crop&q=80&w=800'
+    img: '/products/prosthetics.jpg'
   },
   {
     name: 'Knee & Limb Supports',
     desc: 'Support structures for joints requiring stabilization.',
-    img: 'https://images.unsplash.com/photo-1505521216430-8b73b2067df0?auto=format&fit=crop&q=80&w=800'
+    img: '/products/knee_brace.jpg'
   },
   {
     name: 'Splints and Orthotic Devices',
     desc: 'Devices designed to restrict movement for healing.',
-    img: 'https://images.unsplash.com/photo-1581093806997-124204d9fa9d?auto=format&fit=crop&q=80&w=800'
+    img: '/products/splints.jpg'
   },
   {
     name: 'Crepe and Support Bandages',
     desc: 'Essential medical-grade materials for basic support.',
-    img: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=80&w=800'
+    img: '/products/crepe_bandages.jpg'
   },
   {
     name: 'Patient Support Products',
     desc: 'Products aimed at improving overall patient comfort.',
-    img: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=800'
+    img: '/products/patient_support.jpg'
   },
   {
     name: 'Customised Orthopaedic Solutions',
     desc: 'Tailored solutions designed around specific requirements.',
-    img: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800'
+    img: '/products/custom_ortho.jpg'
   }
 ];
 
